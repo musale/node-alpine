@@ -10,6 +10,6 @@
 
 ### Using the image
 
-> The image is hosted on `docker hub` at [musale/node-alpine](https://hub.docker.com/musale/node-alpine). To use the image:
+> The image is hosted on `docker hub` at [musale/node-alpine](https://hub.docker.com/r/musale/node-alpine/). To use the image:
 
-`docker pull musale/node-alpine`
+`$ docker pull musale/node-alpine`
