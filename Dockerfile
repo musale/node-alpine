@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-RUN apk --update add build-base python curl bash
+RUN apk --update add build-base python curl bash openssh-client git
 
 ENV CLOUD_SDK_VERSION 191.0.0
 
@@ -17,6 +17,7 @@ RUN gcloud --version
 RUN python --version
 RUN gcc --version
 
-RUN npm install argon2
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 CMD [ "node" ]
